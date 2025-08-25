@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvis Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+<button id="theme-toggle">🌙</button>
+<!-- Accent Color Picker -->
+<input type="color" id="accent-picker" value="#00ffff">
+
+
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <h1 class="splash-text">ELVIS</h1>
+    </div>
+
+    <!-- Hero Section -->
+<section class="hero" data-aos="fade-up">
+    <div class="hero-content">
+        <h1>Hi, I'm <span class="name">Elvis</span></h1>
+        <h2 class="typing-text"></h2>
+        <p>I design and build modern websites & apps.</p>
+        <a href="#projects" class="btn" data-aos="zoom-in">View My Work</a>
+    </div>
+</section>
+
+<section id="about" class="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="assets/images/about.png.png" alt="Elvis Muthii" class="about-img">
+      <div class="about-text">
+        <p>Hello! I’m Elvis, a passionate web developer and ethical hacker. I love building modern, responsive websites and learning new tech every day.</p>
+        <p>With skills in HTML, CSS, JavaScript, and cybersecurity, I create secure and stylish digital experiences.</p>
+      </div>
+    </div>
+    <a href="assets/Elvis_Resume.pdf" download class="btn resume-btn">Download My Resume</a>
+</section>
+
+<section id="skills" class="skills" data-aos="fade-left">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+  
+      <div class="skill">
+        <h3>HTML</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%;"></div>
+        </div>
+      </div>
+  
+      <div class="skill">
+        <h3>CSS</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 85%;"></div>
+        </div>
+      </div>
+  
+      <div class="skill">
+        <h3>JavaScript</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 80%;"></div>
+        </div>
+      </div>
+  
+      <div class="skill">
+        <h3>Ethical Hacking</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 60%;"></div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+<section id="projects" class="projects" data-aos="fade-up">
+    <h2>My Projects</h2>
+
+    <div class="project-gallery">
+
+      <div class="project-card">
+        <img src="assets/icons/project1.png" alt="Project 1">
+        <div class="project-info">
+          <h3>Project One</h3>
+          <p>This is a simple login page.</p>
+        </div>
+      </div>
+
+  
+      <div class="project-card">
+        <img src="assets/icons/project2.png" alt="Project 2">
+        <div class="project-info">
+          <h3>Project Two</h3>
+          <p>This is a simple calculator designed using html,css and java script.</p>
+        </div>
+      </div>
+  
+      <!-- Add more project cards as needed -->
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials" data-aos="fade-left">
+    <h2>Testimonials</h2>
+    <div class="testimonial-container">
+  
+      <div class="testimonial">
+        <p>"Elvis is a fantastic developer. His work is top quality and timely."</p>
+        <h4>- Jane Doe</h4>
+      </div>
+  
+      <div class="testimonial">
+        <p>"Highly recommend Elvis for any web development project."</p>
+        <h4>- John Smith</h4>
+      </div>
+  
+      <!-- Add more testimonials as needed -->
+    </div>
+  </section>
+
+  <section id="services" class="services" data-aos="fade-up">
+    <h2>My Services</h2>
+    <div class="services-container">
+  
+      <div class="service">
+        <h3>Web Development</h3>
+        <p>Building modern, responsive, and secure websites tailored to your needs.</p>
+      </div>
+  
+      <div class="service">
+        <h3>UI/UX Design</h3>
+        <p>Creating intuitive and attractive designs that engage users effectively.</p>
+      </div>
+  
+      <div class="service">
+        <h3>Ethical Hacking</h3>
+        <p>Conducting penetration tests to improve your system’s security.</p>
+      </div>
+  
+      <!-- Add more services as needed -->
+    </div>
+  </section>
+  
+  
+
+  <!-- Modal Structure -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <h3 id="modalTitle">Project Title</h3>
+    <img id="modalImage" src="" alt="Project Image" />
+    <p id="modalDescription">Detailed description goes here...</p>
+  </div>
+</div>
+
+
+<section class="timeline" data-aos="fade-up">
+    <h2>My Journey</h2>
+    <div class="timeline-container">
+
+        <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+                <h3>Started Web Development</h3>
+                <p>Learned HTML, CSS, and JavaScript basics.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-content">
+                <h3>Advanced into Full-Stack</h3>
+                <p>Built my first complete portfolio website.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-content">
+                <h3>Ethical Hacking Journey</h3>
+                <p>Began penetration testing with Kali Linux.</p>
+            </div>
+        </div>
+
+        <section class="counters" data-aos="fade-up">
+            <div class="counter-item">
+                <h2 class="counter" data-target="6">0</h2>
+                <p>Projects Completed</p>
+            </div>
+            <div class="counter-item">
+                <h2 class="counter" data-target="2">0</h2>
+                <p>Happy Clients</p>
+            </div>
+            <div class="counter-item">
+                <h2 class="counter" data-target="1">0</h2>
+                <p>Years Experience</p>
+            </div>
+        </section>
+        
+
+    </div>
+</section>
+
+
+    <!-- Main Content -->
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is where the magic will happen...</p>
+    </section>
+
+    <section id="contact" class="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <form id="contactForm" action="https://formsubmit.co/muthiielvis90@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+      
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required placeholder="Your name">
+      
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required placeholder="Your email">
+      
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required placeholder="Write your message here"></textarea>
+      
+          <button type="submit" class="btn">Send Message</button>
+          <p id="formStatus"></p>
+        </form>
+      </section>
+
+      <section id="newsletter" class="newsletter" data-aos="fade-up">
+        <h2>Subscribe to My Newsletter</h2>
+        <form id="newsletterForm" action="https://formsubmit.co/muthiielvis90@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="email" name="email" placeholder="Your email address" required>
+          <button type="submit" class="btn">Subscribe</button>
+          <p id="newsletterStatus"></p>
+        </form>
+      </section>
+
+      <section id="blog" class="blog" data-aos="fade-up">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-container">
+      
+          <article class="blog-post">
+            <img src="assets/images/portfolio-guide.png" alt="Blog Post 1">
+            <h3>How to Build a Portfolio Website</h3>
+            <p>Start with a portfolio template.</p>
+            <p>Add your logos,fonts and colors.</p>
+            <p>Customize your portfolio website.</p>
+            <p>Publish your portfolio website.</p>
+
+            <a href="#" class="btn">Read More</a>
+          </article>
+      
+          <article class="blog-post">
+            <img src="assets/images/cybr-sec.png" alt="Blog Post 2">
+            <h3>Getting Started with Ethical Hacking</h3>
+            <p>Basics of penetration testing and how to kickstart your cybersecurity journey.</p>
+            <p>Learn about the tools and techniques used in ethical hacking.</p>
+            <p>Understand the importance of ethical hacking in today's digital world.</p>
+            <a href="#" class="btn">Read More</a>
+          </article>
+      
+          <!-- Add more blog posts as needed -->
+      
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-content">
+          <p>© 2025 Elvis Muthii. All rights reserved.</p>
+          <div class="footer-social-icons">
+            <!-- You can reuse the social icons here -->
+            <a href="https://twitter.com/stepa_racoze" target="_blank" aria-label="Twitter" rel="noopener noreferrer">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/stepa-gh" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+            <!-- Add more as needed -->
+          </section>
+        </footer>
+    
+
+    <script src="script.js"></script>
+    <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation speed
+    once: true // animation happens only once
+  });
+</script>
+
+</body>
+</html>
